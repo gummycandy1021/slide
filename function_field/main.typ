@@ -1,7 +1,11 @@
 #import "@preview/slydst:0.1.1": *
 
 #set text(lang: "ja")
-#set text(font: ("Yu Gothic"))
+#set text(font: ("Yu Gothic"), size: 11pt)
+
+#set table(
+  stroke: gray
+)
 
 #show: slides.with(
   title: "関数体の紹介\nRiemann予想とABC予想の類似",
@@ -19,7 +23,7 @@
 今は数学とあまり関係ない仕事をしてしまっています。
 
 #figure(
-  image("qrcode.png",width: 30%),
+  image("qrcode.png",width: 35%),
   caption: [https://x.com/GummyCandy1206]
 )
 
