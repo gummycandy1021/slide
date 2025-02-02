@@ -4,7 +4,7 @@
 #set text(font: ("Yu Gothic"))
 
 #show: slides.with(
-  title: "関数体についての紹介",
+  title: "関数体の紹介\nRiemann予想とABC予想の類似",
   authors: "グミ",
 )
 
