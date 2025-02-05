@@ -27,54 +27,98 @@
   caption: [https://x.com/GummyCandy1206]
 )
 
-== 関数体とは
+== 有限体上の1変数多項式環
 
-このスライドでは有限体上の1変数有理関数体やその有限次拡大体のことを単に関数体と呼ぶ。
+$FF_q$を位数が$q$の有限体とする。
 
-たとえば……
+$FF_q$上の1変数多項式環$FF_q [T]$を、以降は単に$A$と表記する。
 
-$ (2T+1)/(T+2) in FF_3 (T) $
-$ (2T+3)/(4T+5) in FF_7 (T) $
+=== $A$の元の具体例
 
-※ $FF_q$は位数は$q$の有限体
+$ T+2 in FF_3 [T] $
+$ 2T+3 in FF_7 [T] $
 
-== 関数体と特徴
+*整数環$ZZ$と有限体上の多項式環$A$は似ている*ことが知られている。
 
-関数体は代数体（$QQ$の有限次拡大体）と似ている。
+以降のスライドで、その類似点を紹介する。
 
-たとえば……
+== 整数環$ZZ$と有限体上の多項式環$A$の類似点 
 
-#table(
-  columns: 2,
-  [有理数体],[有限体上の1変数有理関数体],
-  [整数環],[有限体上の1変数多項式環$A$],
-  [素数$p$],[既約多項式$P$],
-  [$ZZ slash m ZZ, (m eq.not 0)$は有限], [$A slash f A, (f eq.not 0)$は有限],
-  [$(ZZ slash p ZZ)^*$は位数$p-1$の巡回群], [$(A slash P A)^*$は位数$|P|-1$の巡回群],
-)
+#theorem()[
+  $ZZ$は単項ideal整域である。
+]
 
-※ $A:=F_q [T]$
+#theorem()[
+  $A$は単項ideal整域である。
+]
 
-※ $|P| := hash (A slash P A)$
+=== ざっくり説明
 
-== 類似点
+$I$はある元の倍数全体の集合 $=>$
 
-Eulerのトーシェント関数が同様に定義出来る。
-また、Eulerの定理も同様に成り立つ。
+（$I$の元同士を足しても$I$の元　かつ　$I$の元を何倍にしても$I$の元）
+
+逆も成り立つのが単項ideal整域。
+
+#pagebreak()
+
+#theorem()[
+  $m eq.not 0$のとき、剰余環$ZZ slash m ZZ$は有限環である。
+]
+
+#theorem()[
+    $f eq.not 0$のとき、剰余環$A slash f A$は有限環である。
+]
+
+#pagebreak()
+
+#theorem()[
+  $p$が素数のとき、剰余環の乗法群$(ZZ slash p ZZ)^*$は位数$p-1$の巡回群である。
+]
+
+#theorem()[
+  $P$が既約多項式のとき、剰余環の乗法群$(A slash P A)^*$は位数$|P|-1$の巡回群である。
+]
+
+※ $|P|$は$A slash P A$の位数を表す。
+
+#pagebreak()
 
 #theorem(title: "Eulerの定理")[
+  $n in ZZ, ZZ eq.not 0$とする。また、$a in ZZ$を$n$と互いに素な元とする。
+  このとき、次が成り立つ。
+  $ a^(phi(n)) eq.triple 1 (mod n) $
+]
+
+#theorem()[
   $f in A, A eq.not 0$とする。また、$a in A$を$f$と互いに素な元とする。
   このとき、次が成り立つ。
   $ a^(Phi(f)) eq.triple 1 (mod f) $
 ]
 
-よって、Fermatの小定理も同様に成り立つ。
+※ $phi(n)$はEulerのトーシェント関数、$Phi(f)$はその$A$での類似の関数。
 
-また、zeta関数も同様に定義できる。
+従って、Fermatの小定理も同様に成り立つ。
 
-#definition(title: "zeta関数")[
+#pagebreak()
+
+#definition(title: "Riemann zeta関数")[
+  $ zeta (s) := sum_(n=1)^oo 1/(n^s) $
+]
+
+#definition(title: "Aのzeta関数")[
   $ zeta_A (s) := sum_(f in A, f text("monic")) 1/(|f|^s) $
 ]
+
+== 関数体の対応関係
+
+整数環$ZZ$と有限体上の多項式環$A$の対応と同様に、次の対応関係がある。
+
+#table(
+  columns: 2,
+  [有理数体$QQ$], [有限体上の1変数有理関数体$FF_q (T)$],
+  [代数体（$QQ$の有限次拡大体）], [関数体（$FF_q (T)$の有限次拡大体）]
+)
 
 では、相違点は……？
 
