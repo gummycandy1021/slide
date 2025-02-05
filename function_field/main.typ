@@ -136,10 +136,6 @@ $ max(text("ht")(u),text("ht")(v)) lt.eq m_epsilon + (1+epsilon) sum_(p | A B C)
 
 整数論に興味のある方は、関数体も学んでみるとこれらの証明を理解できるかも？
 
-== 参考文献
-
-#bibliography("reference.bib")
-
 == （補記）
 
 - 関数体では整数論の定理だけでなく、他にもRiemann-Rochの定理や、Riemann-Hurwitzの定理も同様に成り立つ。
@@ -172,3 +168,7 @@ $ max(text("ht")(u),text("ht")(v)) lt.eq m_epsilon + (1+epsilon) sum_(p | A B C)
 $ 11^(ln 11) = 314.159789... $
 
 $100 pi$に近い。なんで？
+
+== 参考文献
+
+#bibliography("reference.bib")
