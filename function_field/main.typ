@@ -9,7 +9,9 @@
 
 #show: slides.with(
   title: "関数体の紹介\nRiemann予想とABC予想の類似",
+  subtitle: "第32回日曜数学会",
   authors: "グミ",
+  date: "2025-02-16"
 )
 
 == 自己紹介
