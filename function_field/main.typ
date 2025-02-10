@@ -171,11 +171,9 @@ $ max(text("ht")(u),text("ht")(v)) lt.eq m_epsilon + (1+epsilon) sum_(p | A B C)
 
 本スライドでは有限体上の1変数代数関数体を扱ったが、有限体・1変数に限らず一般の体$k$上の$n$変数代数関数体も定義できる。
 
-例：$CC$上の1変数有理関数体
+Wikipedia @wikipedia_Algebraic_function_field によると、正規射影既約代数曲線の圏は$1$変数函数体の圏と反変同値であるらしい。
 
-$CC$上の1変数有理関数体の圏は、以下と圏同値。@yanagida
-- 閉Riemann面の圏
-- 非特異射影曲線の圏
+また$k$が$CC$の場合、$CC$上の1変数代数関数体の圏は閉Riemann面の圏と反変同値であるらしい。 @alg-d @yanagida
 
 == 全くの余談
 
