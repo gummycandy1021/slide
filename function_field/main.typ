@@ -24,6 +24,11 @@
 
 今は数学とあまり関係ない仕事をしてしまっています。
 
+=== 日曜数学会への参加
+
+- 第30回：初参加、発表なし
+- 第32回（今回）：初発表
+
 == 記号
 
 $FF_q$を位数が$q$の有限体とする。
@@ -133,13 +138,14 @@ $ max(text("ht")(u),text("ht")(v)) lt.eq m_epsilon + (1+epsilon) sum_(p | A B C)
 
 #figure(
   image("qrcode.png",width: 23%),
-  caption: [Xへのリンク。本スライドはこちらに掲載します。]
+  caption: [スライドへのリンク]
 )
 
 == QRコードデカい版
 
 #figure(
-  image("qrcode.png",width: 80%)
+  image("qrcode.png",width: 60%),
+  caption: [https://www.docswell.com/s/GummyCandy1206/Z7R1D6-introduction_to_function_fields]
 )
 
 == （補記）
